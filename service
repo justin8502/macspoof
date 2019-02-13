@@ -1,0 +1,9 @@
+[Unit]
+Description=ChangeMAC
+
+[Service]
+Type=oneshot
+ExecStart=/etc/systemd/macspoof.sh
+
+[Install]
+WantedBy=multi-user.target
